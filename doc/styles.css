@@ -1,0 +1,168 @@
+:root {
+    --dark:#018786;
+    --light:#03dac6;
+}
+
+
+/*Css for page*/
+
+body {
+    background-color: var(--light);
+    margin:0;
+    display: grid;
+    grid-template-rows: 150px 1fr 0.1fr;
+    color:white;
+    /* overflow: hidden; */
+
+}
+
+/* css for grid */
+.grid {
+    display: grid;
+}
+
+/* header part */
+
+.header {
+    background-color: var(--dark);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.imgdiv {
+    position: relative;
+    right:25px;
+    width:100px;
+    height: 100px;
+}
+
+.img {
+    height: 100%;
+    width: 150%;
+}
+
+.name {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top:15px;
+}
+
+.navlistul {
+    list-style-type: none;
+    border:0px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    width:371px;
+    float:right;
+}
+.navlistul li {
+    display: inline; 
+    float: right;
+    font-size: 15px;
+    padding:7px;
+    margin-top: 30px;
+    border: 2px solid var(--dark);
+}
+
+.navlistul li:hover  {
+    border-bottom: 2px solid aqua;
+}
+.navlistul li:active  {
+    
+    border-bottom: 2px solid blue;
+}
+
+
+/*Css for Body*/
+
+.body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 40px 1fr 40px 800px ;
+    padding:40px;
+    
+}
+
+.body h2 {
+    grid-column: span 111;
+    margin: 10px 10px
+}
+
+.skillsubjectdiv {
+    border:1px solid black;
+    background-color: white;
+    color: black;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.01fr 1fr;
+    padding:10px;
+}
+
+.generalsubjectdiv {
+    border:1px solid black;
+    background-color: white;
+    color: black;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    padding:10px;
+}
+
+.subjectsdiv {
+    border: 0px solid black;
+    margin:10px;
+    background-color: var(--light);
+    color: black;
+    border-radius:5px;
+    height: 170px;
+}
+
+.subjectsdiv:hover {
+    background-color: rgb(0, 255, 221);
+}
+
+.syllabus {
+    background-color: white;
+    color:black;
+    /* height: 800px; */
+}
+
+/*Css for footer*/
+
+
+
+
+/*custom css*/
+.nm {
+    margin:0%;
+}
+
+.np {
+    padding: 0;
+}
+.center {
+    text-align: center;
+}
+.bg-red {
+    background-color: red;
+}
+.full {
+    width: 100%;
+    height: 100%;
+}
+
+.flex-center {
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

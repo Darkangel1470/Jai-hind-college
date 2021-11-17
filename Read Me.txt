@@ -1,0 +1,24 @@
+Make a website for jai hind colleges student 
+where
+they can register and make login page
+so create a registration page and then a login page
+then the main objective of this website 
+is to check your Courses syllabus
+so take information like course name and
+current sum , in registration page 
+as well as make a feature so that you
+can edit your account information 
+so create a account page 
+and also CREATE a page for checking your syllabus
+
+
+
+
+
+page must have :
+1. Registration page
+2. Login page
+3. account page (to change account information)
+4. page for checking your syllabus
+5. then publish it on github.io 
+

@@ -1,0 +1,177 @@
+:root {
+    --dark:#018786;
+    --light:#03dac6;
+}
+
+
+/*Css for page*/
+
+body {
+    background-color: var(--light);
+    margin:0;
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 0.1fr;
+    color:white;
+    overflow: hidden;
+
+}
+
+/* css for grid */
+.grid {
+    display: grid;
+}
+
+/* header part */
+
+.header {
+    background-color: var(--dark);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.imgdiv {
+    position: relative;
+    right:25px;
+    width:100px;
+    height: 100px;
+}
+
+.img {
+    height: 100%;
+    width: 130%;
+}
+
+.name {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top:15px;
+}
+
+.navlistul {
+    list-style-type: none;
+    border:1px solid black;
+}
+.navlistul li {
+    display: inline; 
+    float: right;
+    font-size: 18px;
+    padding:10px;
+    margin-top: 30px;
+    border: 2px solid var(--dark);
+}
+
+.navlistul li:hover  {
+    border-bottom: 2px solid aqua;
+}
+.navlistul li:active  {
+    
+    border-bottom: 2px solid blue;
+}
+
+
+/*Css for Body*/
+
+.signupdiv {
+    color: black;
+    margin: 30px 30px;
+    height: 85%;
+    background-color: white;
+    padding-top: 20px;
+    
+}
+
+.container {
+    height: 100%;
+}
+
+.signupdiv h1 {
+    margin-top:0;
+    margin-bottom: 20px;
+}
+
+
+
+form {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
+    text-align: right;
+    margin: 20px;
+    height: calc(100% - 95px);
+}
+
+form label {
+    margin-right: 10px;
+    margin: 10px;
+}
+
+form input {
+    height: 30px;
+    width: 50%;
+    padding: 0px 0px 0px 5px;
+    border: 2px;
+}
+
+form input:hover {
+    border-bottom:3px solid var(--light);
+}
+
+form input:focus {
+    outline: none;
+    border-bottom:3px solid var(--dark);
+}
+
+.checkbox input {
+    float: right;
+    height: 20px;
+    
+}
+
+
+.signedIn {
+    text-align: left;
+    position: relative;
+    right:20px;
+}
+
+form button {
+    grid-column: span 2;
+    margin-top:10px;
+    padding: 12px;
+    margin-bottom:160px;
+
+}
+
+/*Css for footer*/
+.footer {
+    background-color: red;
+}
+
+
+
+/*custom css*/
+.nm {
+    margin:0%;
+}
+
+.np {
+    padding: 0;
+}
+.center {
+    text-align: center;
+}
+.bg-red {
+    background-color: red;
+}
+.full {
+    width: 100%;
+    height: 100%;
+}
+
