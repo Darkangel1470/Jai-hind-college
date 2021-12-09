@@ -46,7 +46,7 @@ wdp.click(function() {
 })
 oop.click(function() {
     setTimeout(function() {
-        $("#simg1").attr("src","img\\SEM_I_FYBVOC_SD_page-0020.jpg").slideDown();
+        $("#simg1").attr("src","img\\SEM_I_FYBVOC_SD_page-0020.jpg").show();
         $("#simg2").attr("src","img\\SEM_I_FYBVOC_SD_page-0021.jpg").show();
         $("#simg3").attr("src","img\\SEM_I_FYBVOC_SD_page-0022.jpg").show();
         $("#simg4").attr("src","img\\SEM_I_FYBVOC_SD_page-0023.jpg").show();
@@ -94,8 +94,8 @@ oa.click(function() {
 })
 cs.click(function() {
     setTimeout(function() {
-        $("#simg1").attr("src","img\\SEM_I_FYBVOC_SD_page-0003.jpg");
-        $("#simg2").attr("src","img\\SEM_I_FYBVOC_SD_page-0004.jpg");
+        $("#simg1").attr("src","img\\SEM_I_FYBVOC_SD_page-0003.jpg").show();
+        $("#simg2").attr("src","img\\SEM_I_FYBVOC_SD_page-0004.jpg").show();
         $("#simg3").hide()
         $("#simg4").hide()
         $("#simg5").hide()
@@ -109,10 +109,10 @@ french.click(function() {
         
         $("#simg1").attr("src","img\\SEM_I_FYBVOC_SD_page-0005.jpg").show();
         $("#simg2").attr("src","img\\SEM_I_FYBVOC_SD_page-0006.jpg").show();
-        $("#simg3").hide()
-        $("#simg4").hide().show()
-        $("#simg5").hide()
-        $("#simg6").hide()
+        $("#simg3").hide();
+        $("#simg4").hide();
+        $("#simg5").hide();
+        $("#simg6").hide();
         $("img").attr("width","100%");
     },500);
 })
