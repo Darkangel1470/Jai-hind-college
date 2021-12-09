@@ -59,7 +59,7 @@ body {
     list-style-type: none;
     border:0px solid black;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr ;
     width:371px;
     float:right;
@@ -124,11 +124,14 @@ body {
 
 .subjectsdiv {
     border: 0px solid black;
+    border-bottom: 5px solid var(--dark);
+    border-right: 5px solid var(--dark);
     margin:10px;
     background-color: var(--light);
     color: black;
     border-radius:5px;
     height: 170px;
+
 }
 
 .subjectsdiv:hover {
@@ -171,3 +174,4 @@ body {
     justify-content: center;
     align-items: center;
 }
+

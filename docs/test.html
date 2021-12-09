@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <style>
+            div {
+                width:200px; height:200px;
+                margin: 10px auto;
+                border: 0px solid black;
+                border-bottom-width: 5px;
+                border-right-width: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>f</div>
+        <div>f</div>
+        <div>f</div>
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $("div").css("background-color", "grey")
+            $("div").click(function() {
+                $("div").animate({
+                    'borderBottomWidth':"5px"
+                })
+                $(this).animate({
+                    "borderTopWidth": "5px",
+                    "borderLeftWidth": "5px",
+                    "borderBottomWidth": "0px",
+                    "borderRightWidth": "0px"
+            },"fast");
+
+            })
+        </script>
+    </body>
