@@ -16,7 +16,7 @@ subdiv.click(function() {
     setTimeout(function() {
 
         syllabus.slideDown("fast");
-    },500)
+    },800)
 
     $(".subjectsdiv").animate({
         "borderTopWidth": "0px",
