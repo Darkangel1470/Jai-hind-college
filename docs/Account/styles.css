@@ -61,6 +61,12 @@ body {
     list-style-type: none;
     border:1px solid black;
 }
+
+.navlistul li a {
+    text-decoration: none;
+    color:white;
+}
+
 .navlistul li {
     display: inline; 
     float: right;

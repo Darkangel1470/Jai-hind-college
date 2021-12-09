@@ -67,6 +67,11 @@ body {
     border: 2px solid var(--dark);
 }
 
+.navlistul li a {
+    text-decoration: none;
+    color:white;
+}
+
 .navlistul li:hover  {
     border-bottom: 2px solid aqua;
 }
