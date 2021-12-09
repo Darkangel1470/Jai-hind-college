@@ -57,8 +57,8 @@ oop.click(function() {
 })
 dbms.click(function() {
     setTimeout(function() {
-        $("#simg1").attr("src","img\\SEM_I_FYBVOC_SD_page-0003.jpg").show();
-        $("#simg2").attr("src","img\\SEM_I_FYBVOC_SD_page-0004.jpg").show();
+        $("#simg1").attr("src","img\\SEM_II_FYBVOC_SD_page-0013.jpg").show();
+        $("#simg2").attr("src","img\\SEM_II_FYBVOC_SD_page-0014.jpg").show();
         $("#simg3").hide()
         $("#simg4").hide()
         $("#simg5").hide()
