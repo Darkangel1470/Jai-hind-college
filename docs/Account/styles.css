@@ -1,13 +1,29 @@
 :root {
     --dark:#018786;
     --light:#03dac6;
-}
+    --background: #cbc0ff;
+    --lightpurp: #ab92f1;
+    --grey: #909092;
 
+    --header: #7158e6;
+    --right: var(--grey);
+    --bottom: var(--grey);
+    --skillbg: white;
+    --generalbg: white;
+    --subdiv: #7158e6;
+    --subdivborder: grey;
+    --gradient: linear-gradient(-45deg, var(--header),var(--lightpurp))
+}
+/* background-color: var(--header);
+    border-radius: 5px;
+    color: white;
+    font-size:2rem;
+} */
 
 /*Css for page*/
 
 body {
-    background-color: var(--light);
+    background-color: var(--background);
     margin:0;
     display: grid;
     grid-template-rows: 0.2fr 1fr 0.1fr;
@@ -27,7 +43,7 @@ body {
 /* header part */
 
 .header {
-    background-color: var(--dark);
+    background-color: var(--header);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -73,22 +89,22 @@ body {
     font-size: 18px;
     padding:10px;
     margin-top: 30px;
-    border: 2px solid var(--dark);
+    border: 2px solid var(--header);
 }
 
 .navlistul li:hover  {
-    border-bottom: 2px solid aqua;
+    border-bottom: 2px solid var(--lightpurp);
 }
 .navlistul li:active  {
     
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid var(--header);
 }
 
 
 /*Css for Body*/
 
 .signupdiv {
-    color: black;
+    color: var(--grey);
     margin: 30px 30px;
     height: 85%;
     background-color: white;
@@ -105,7 +121,9 @@ body {
     margin-bottom: 20px;
 }
 
-
+hr {
+    color:var(--header);
+}
 
 form {
     display: grid;
@@ -129,19 +147,23 @@ form input {
 }
 
 form input:hover {
-    border-bottom:3px solid var(--light);
+    border-bottom:3px solid var(--lightpurp);
 }
 
 form input:focus {
     outline: none;
-    border-bottom:3px solid var(--dark);
+    border-bottom:3px solid var(--header);
 }
 
 form button {
     grid-column: span 2;
     margin-top:10px;
     padding: 12px;
-
+    background-color: var(--header);
+    border-radius: 5px;
+    color: white;
+    font-size:25px;
+}
 }
 
 /*Css for footer*/
