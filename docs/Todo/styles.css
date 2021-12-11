@@ -1,0 +1,279 @@
+
+:root {
+    --dark:#018786;
+    --light:#03dac6;
+    --background: #cbc0ff;
+    --lightpurp: #ab92f1;
+    --grey: #909092;
+
+    --header: #7158e6;
+    --right: var(--grey);
+    --bottom: var(--grey);
+    --skillbg: white;
+    --generalbg: white;
+    --subdiv: #7158e6;
+    --subdivborder: grey;
+    --gradient: linear-gradient(-45deg, var(--header),var(--lightpurp))
+}
+
+/*Css for page*/
+
+body {
+    background-color: var(--background);
+    margin:0;
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 0.1fr;
+    color:white;
+    /* overflow: hidden; */
+
+}
+
+/* css for grid */
+.grid {
+    display: grid;
+}
+
+/* header part */
+
+.header {
+    background-color: var(--header);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.imgdiv {
+    position: relative;
+    right:25px;
+    width:100px;
+    height: 100px;
+}
+
+.img {
+    height: 100%;
+    width: 130%;
+}
+
+.name {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top:15px;
+}
+
+.navlistul {
+    list-style-type: none;
+    border:1px solid black;
+}
+.navlistul li {
+    display: inline; 
+    float: right;
+    font-size: 18px;
+    padding:10px;
+    margin-top: 30px;
+    border: 2px solid var(--header);
+}
+a {
+    text-decoration: none;
+    color:white;
+}
+
+.navlistul li:hover  {
+    border-bottom: 2px solid var(--lightpurp);
+}
+.navlistul li:active  {
+    
+    border-bottom: 2px solid blue;
+}
+
+
+/*Css for Body*/
+
+.container {
+    color: black;
+    height: 95%;
+    margin: 30px 30px;
+    background-color: white;
+    padding-top: 20px;
+    padding: 20px;
+    
+}
+
+
+
+.addlist {
+    background-color: var(--background);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.addlist input {
+    position: relative;
+    right: 40px;
+    height: 40px;
+    
+}
+.addlist button {
+    position: relative;
+    right:20px;
+    border: 0px;
+    
+}
+.addlist span {
+    font-size: 2rem;
+}
+
+
+.hover:hover {
+    background-color: var(--lightpurp);
+}
+.list {
+    background-color: var(--background);
+    width: calc(100%-20px);
+    padding-right: auto;
+    padding-bottom:20px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+.tasklist {
+    display: grid;
+    border:2px solid var(--background);
+    grid-template-columns:1fr;
+}
+.listitem {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    height: 30px;
+}
+.listitem p {
+    position: relative;
+    bottom: 8px;
+    padding: 0px 20px;
+}
+.additem {
+    background-color: var(--background);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+}
+/* .additem p{
+    position:relative;
+    right:20px;
+    width: 100%;
+    border:2px solid black;
+} */
+.additem input {
+    position: relative;
+    right: 40px;
+    height: 40px;
+    width: 60%;
+    
+}
+.additem button {
+    position: relative;
+    right:25px;
+    border: 0px;
+    
+}
+.additem span {
+    font-size: 2rem;
+}
+
+
+
+
+label {
+    margin-right: 10px;
+    margin: 10px;
+}
+
+input {
+    height: 30px;
+    width: 60%;
+    padding: 0px 0px 0px 5px;
+    border: 2px;
+}
+
+input:hover {
+    border-bottom:3px solid var(--header);
+}
+
+ input:focus {
+    outline: none;
+    border-bottom:3px solid var(--header);
+}
+
+.checkbox input {
+    float: right;
+    height: 20px;
+    
+}
+
+
+
+
+form button {
+    grid-column: span 2;
+    margin-top:10px;
+    padding: 12px;
+    margin-bottom:160px;
+    background-color: var(--header);
+    border-radius: 5px;
+    color: white;
+    font-size:25px;
+    
+}
+
+/*Css for footer*/
+.footer {
+    background-color: red;
+}
+
+
+
+/*custom css*/
+.nm {
+    margin:0%;
+}
+
+.np {
+    padding: 0;
+}
+.center {
+    text-align: center;
+}
+.bg-red {
+    background-color: red;
+}
+.full {
+    width: 100%;
+    height: 100%;
+}
+.hidden {
+    display:none;
+}
+
+.btn {
+    padding: 12px;
+    background-color: var(--header);
+    border-radius: 5px;
+    color: white;
+}
+
+.mg-left-20 {
+    margin-left: 20px;
+}
+

@@ -3,71 +3,79 @@
     <head>
         <meta charset="utf-8"/>
         <style>
-            :root {
-                
-                --dark:#018786;
-                --light:#03dac6;
-                --background: #cbc0ff;
-                --lightpurp: #ab92f1;
-                --header: #7158e6;
-                --right: var(--background);
-                --bottom: var(--background);
-                --grey: #909092;
-                --skillbg: white;
-                --generalbg: white;
-                --subdiv: #7158e6;
-                --subdivborder: grey;
-                --gradient: linear-gradient(-45deg, var(--header),var(--lightpurp))
+           body {
+               background-color: lightblue;
+           }
+           .options {
+               width: 60px;
+               height: 40px;
+        
+           }
+
+           .optionsdiv {
+               height: 40px;
+               width: 150px;
+           }
+           
+           .navlistul {
+               list-style-type:none;
+               border:2px solid blue;
+               width: 150px;
+               padding:0px;
             }
-            div {
-                width:200px; height:200px;
-                margin: 10px auto;
-                border: 0px solid black;
-                border-bottom-width: 5px;
-                border-right-width: 5px;
-                background-image: var(--gradient);
+            a {
+                text-decoration: none;
             }
-            .test {
-                background-color: red;
-                border:5px solid black;
+
+            .navlistul li {
+                border:2px solid blue;
+                margin: 0px auto;
+                padding:10px;
 
             }
+            .container{
+                border:10px solid black;
+                height: 100px;
+            }
+
+       
         </style>
     </head>
     <body>
-        <div>f</div>
-        <div>f</div>
-        <div>f</div>
-
-        <div class="test">
-            <div class="child test">
-             <div  class="test">
-                    <div class="test">
-                        <div class="test">g</div>
-                    </div>
-                </div>
+        <div class="container">
+            <div class="optionsdiv">
+                <img src="https://logodix.com/logo/1146025.png" class="options" alt="">
+                <ul class="navlistul nm np">
+                    <li><a href="https://darkangel1470.github.io/Jai-hind-college/" target="_self">My Syllabus</a></li>
+                    <li><a href="https://darkangel1470.github.io/Jai-hind-college/contact%20dev/contact_dev.html">Contact Dev</a></li>
+                    <li><a href="https://darkangel1470.github.io/Jai-hind-college/Account/account.html">Account</a></li>
+                    <!-- <li><a href="https">Home</a></li> -->
+                </ul>
             </div>
+
         </div>
+
+        
        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
         <script>
-            $("div").css("background-color", "grey")
-            $("div").click(function() {
-                $("div").animate({
-                    "borderTopWidth": "0px",
-                    "borderLeftWidth": "0px",
-                    "borderBottomWidth": "5px",
-                    "borderRightWidth": "5px"
+            const option = $(".options");
+            const optionsdiv = $(".optionsdiv");
+            const navlist = $(".optionsdiv ul");
+            const optionimg = $(".optionsdiv img");
+            
+            navlist.hide();
+            optionsdiv.mouseover(function() {
+                optionimg.slideUp(100, function() {
+                    navlist.slideDown(200);
                 })
-                $(this).animate({
-                    "borderTopWidth": "5px",
-                    "borderLeftWidth": "5px",
-                    "borderBottomWidth": "0px",
-                    "borderRightWidth": "0px"
-            },"fast");
-
-        })
-
+            });
+            optionsdiv.mouseleave(function() {
+                navlist.slideUp(200, function() {
+                    optionimg.fadeIn(100)
+                })
+            });
 
 
         </script>

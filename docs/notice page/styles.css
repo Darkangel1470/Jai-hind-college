@@ -24,7 +24,7 @@ body {
     display: grid;
     grid-template-rows: 150px 1fr 0.1fr;
     color:white;
-    /* overflow: hidden; */
+    overflow: hidden;
 
 }
 
@@ -67,7 +67,7 @@ body {
     top:15px;
 }
 
-/* .navlistul {
+.navlistul {
     list-style-type: none;
     border:0px solid black;
     display: grid;
@@ -96,102 +96,50 @@ body {
 .navlistul li:active  {
     
     border-bottom: 2px solid blue;
-} */
-.options {
-    width: 60px;
-    height: 40px;
-
 }
-
-.optionsdiv {
-    height: 40px;
-    width: 150px;
-    float:right;
-    position: relative;
-    top: 50%;
-    margin-right:20px;
-    text-align:right;
-    
-}
-
-
-.navlistul {
-    list-style-type:none;
-    border:0px solid var(--lightpurp);
-    background-color: white;
-    width: 150px;
-    padding:0px;
-}
-a {
-    text-decoration: none;
-    color:black;
-}
-
-.navlistul li {
-    border:2px solid blue;
-    margin: 0px auto;
-    padding:10px;
-
- }
-
 
 
 /*Css for Body*/
 
-.body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 40px 1fr 40px 800px ;
-    padding:40px;
-    
-}
-
-.body h2 {
-    grid-column: span 111;
-    margin: 10px 10px
-}
-
-.skillsubjectdiv {
-    border:1px solid var(--lightpurp);
-    background-color: var(--skillbg);
-    color: var(--grey);
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.01fr 1fr;
-    padding:10px;
-}
-
-.generalsubjectdiv {
-    border:1px solid var(--lightpurp);
-    background-color: var(--generalbg);
-    color: var(--grey);
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr;
-    padding:10px;
-}
-
-.subjectsdiv {
-    border: 0px solid var(--subdivborder);
-    border-bottom: 5px solid var(--bottom);
-    border-right: 5px solid var(--right);
-    margin:10px;
-    background-color: var(--subdiv);
-    color: white;
-    border-radius:5px;
-    height: 170px;
-
-}
-
-.subjectsdiv:hover {
-    background-color: rgb(0, 255, 221);
-}
-
-.syllabus {
+.noticeboard {
     background-color: white;
-    color:black;
-    /* height: 800px; */
+    height: 61vh;
+    margin: 40px;
+    border: 10px solid var(--header);
+    border-right:0px;
+    border-left: 0px;
+    padding: 20px;
+    color:var(--grey);
 }
+.noticeboard p {
+    font-size: 12px;
+    font-family: 'Chicle', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.noticelist {
+    padding: 20px;
+}
+.noticelist a {
+    text-decoration: none;
+    display: list-item;
+    font-size:large;
+    font-family: 'Chicle', cursive;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom:30px;
+    border-bottom:2px solid var(--header);
+    color: black;
+}
+
+form {
+    color: black;
+}
+
+
+
+
+
+
 
 /*Css for footer*/
 

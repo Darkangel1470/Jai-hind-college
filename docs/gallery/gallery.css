@@ -40,6 +40,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    box-shadow: 0px 10px 10px 10px var(--lightpurp)
     
 }
 
@@ -65,9 +66,10 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
     top:15px;
+    text-shadow: 8px 5px 10px var(--lightpurp);
 }
 
-/* .navlistul {
+.navlistul {
     list-style-type: none;
     border:0px solid black;
     display: grid;
@@ -96,101 +98,32 @@ body {
 .navlistul li:active  {
     
     border-bottom: 2px solid blue;
-} */
-.options {
-    width: 60px;
-    height: 40px;
-
 }
-
-.optionsdiv {
-    height: 40px;
-    width: 150px;
-    float:right;
-    position: relative;
-    top: 50%;
-    margin-right:20px;
-    text-align:right;
-    
-}
-
-
-.navlistul {
-    list-style-type:none;
-    border:0px solid var(--lightpurp);
-    background-color: white;
-    width: 150px;
-    padding:0px;
-}
-a {
-    text-decoration: none;
-    color:black;
-}
-
-.navlistul li {
-    border:2px solid blue;
-    margin: 0px auto;
-    padding:10px;
-
- }
-
 
 
 /*Css for Body*/
 
-.body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 40px 1fr 40px 800px ;
-    padding:40px;
-    
+.container {
+    margin-top: 15%;
+    display:flex;
+    flex-direction: rows;
+    justify-content: center;
+    align-items: center;
+}
+.image {
+    box-shadow: 0px 0px 20px 15px var(--header)
 }
 
-.body h2 {
-    grid-column: span 111;
-    margin: 10px 10px
+.prev {
+    height:60px;
+    position:relative;
+    left:30px;
 }
 
-.skillsubjectdiv {
-    border:1px solid var(--lightpurp);
-    background-color: var(--skillbg);
-    color: var(--grey);
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.01fr 1fr;
-    padding:10px;
-}
-
-.generalsubjectdiv {
-    border:1px solid var(--lightpurp);
-    background-color: var(--generalbg);
-    color: var(--grey);
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr;
-    padding:10px;
-}
-
-.subjectsdiv {
-    border: 0px solid var(--subdivborder);
-    border-bottom: 5px solid var(--bottom);
-    border-right: 5px solid var(--right);
-    margin:10px;
-    background-color: var(--subdiv);
-    color: white;
-    border-radius:5px;
-    height: 170px;
-
-}
-
-.subjectsdiv:hover {
-    background-color: rgb(0, 255, 221);
-}
-
-.syllabus {
-    background-color: white;
-    color:black;
-    /* height: 800px; */
+.next {
+    height:60px;
+    position:relative;
+    right:30px;
 }
 
 /*Css for footer*/
@@ -198,8 +131,6 @@ a {
 .footer {
     background-color: var(--lightpurp);
 }
-
-
 
 /*custom css*/
 .nm {

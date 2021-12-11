@@ -8,6 +8,10 @@ var cs = $(".cs");
 var french = $(".french");
 var simg = $("#simg1");
 var subdiv = $(".subjectsdiv");
+const option = $(".options");
+const optionsdiv = $(".optionsdiv");
+const navlist = $(".optionsdiv ul");
+const optionimg = $(".optionsdiv img");
 
 syllabus.hide();
 
@@ -116,3 +120,15 @@ french.click(function() {
         $("img").attr("width","100%");
     },500);
 })
+
+navlist.hide();
+    optionsdiv.mouseover(function() {
+        optionimg.slideUp(100, function() {
+            navlist.slideDown(200);
+        })
+    });
+    optionsdiv.mouseleave(function() {
+        navlist.slideUp(200, function() {
+            optionimg.fadeIn(100)
+    })
+});
