@@ -16,16 +16,15 @@
 }
 
 
-
 /*Css for page*/
 
 body {
     background-color: var(--background);
     margin:0;
     display: grid;
-    grid-template-rows: 0.2fr 1fr 0.1fr;
+    grid-template-rows: 150px 1fr 0.1fr;
     color:white;
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 
@@ -41,6 +40,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    box-shadow: 0px 10px 10px 10px var(--lightpurp)
+    
 }
 
 .logo {
@@ -58,13 +59,14 @@ body {
 
 .img {
     height: 100%;
-    width: 130%;
+    width: 150%;
 }
 
 .name {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
     top:15px;
+    text-shadow: 8px 5px 10px var(--lightpurp);
 }
 
 .options {
@@ -110,102 +112,90 @@ a {
  .navlistul li:hover a {
      color:White;
  }
-
 /*Css for Body*/
-
-.signupdiv {
-    color: black;
-    margin: 30px 30px;
-    height: 70%;
-    background-color: white;
-    padding-top: 20px;
-    
+.body {
+    margin: 10px 20px auto 20px;
 }
+.blogpost {
+    display:grid;
+    grid-template-columns: 100px 1fr;
+    margin-bottom:50px;
 
-.container {
-    height: 100%;
 }
-
-.signupdiv h1 {
-    margin-top:0;
-    margin-bottom: 20px;
-}
-
-
-
-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 3fr;
-    text-align: right;
-    margin: 20px;
-    height: calc(100% - 95px);
-}
-
-form label {
-    margin-right: 10px;
-    margin: 10px;
-}
-
-form input {
-    height: 30px;
-    margin: 10px 0px;
-    width: 90%;
-    padding: 0px 0px 0px 5px;
-    border: none;
-    border-bottom: 3px solid lightgrey;
-    color:grey
-}
-
-form input:hover {
-    border-bottom:3px solid var(--lightpurp);
-}
-
-form input:focus {
-    outline: none;
-    border-bottom:3px solid var(--header);
-}
-
-.checkbox input {
-    float: right;
-    height: 20px;
-}
-
-.signedIn {
-    text-align: left;
+.blognumber {
+    font-size:5rem;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing:0px;
+    color: var(--grey);
+    text-align: center;
     position: relative;
-    right:20px;
+    top:30px;
+    height: calc(100% - 30px);
+    text-shadow: 3px 10px 10px black;
+}
+.blog {
+    display:grid;
+    grid-template-columns: 1fr 220px;
+    border: 1px solid black;
+    background-color: white;
+    color:black;
+    height:150px;
+    box-shadow: 10px 10px 10px var(--header);
+}
+.blogleft {
+    position:relative;
+    margin-left:20px;
+}
+.writer {
+    display:list-item;
+    list-style-type:square;
+}
+.title {
+    letter-spacing:0px;
+    margin-left:-15px;
+    font-size:22px;
+    font-weight:700;
+    margin: 0;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.hook {
+    font-size:16px;
+    line-height: 20px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight:400;
+    margin:4px 0 0 0;
+}
+.details {
+    position:absolute;
+    bottom:10px;
+
+}
+.date {
+    color: var(--grey)
+}
+.tags {
+    background-color:#cccccc;
+    padding:5px;
+    border-radius:15px;
+    color:#444444;
+}
+.blogimgdiv {
+    text-align:right;
+    height:100%;
+    width:100%;
+}
+.blog img {
+    height: 150px;
+    width: 220px;
 }
 
-form button {
-    grid-column: span 2;
-    margin-top:10px;
-    padding: 12px;
-    margin-bottom:160px;   
-    background-color: var(--header);
-    border-radius: 5px;
-    color: white;
-    font-size:25px;
-}
-
-
-/* CSS for inputs */
-#cname {
-    grid-column: span 2;
-    width:95%;
-}
-
-#reason {
-    grid-column: span 2;
-    resize: none;
-}
 
 /*Css for footer*/
+
 .footer {
-    background-color: red;
+    background-color: var(--lightpurp);
 }
-
-
 
 /*custom css*/
 .nm {
@@ -224,5 +214,12 @@ form button {
 .full {
     width: 100%;
     height: 100%;
+}
+
+.flex-center {
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 

@@ -22,3 +22,36 @@ page must have :
 4. page for checking your syllabus
 5. then publish it on github.io 
 
+this is more .html
+
+links
+index.html
+https://darkangel1470.github.io/Jai-hind-college/
+
+contact html <
+https://darkangel1470.github.io/Jai-hind-college/contact%20dev/contact_dev.html
+
+account page 
+https://darkangel1470.github.io/Jai-hind-college/Account/account.html
+
+registration page 
+https://darkangel1470.github.io/Jai-hind-college/registration%20page.html/sign_up.html
+
+login page 
+https://darkangel1470.github.io/Jai-hind-college/login/log_in.html
+
+notice page 
+https://darkangel1470.github.io/Jai-hind-college/notice%20page/notice.html
+
+
+todo page 
+https://darkangel1470.github.io/Jai-hind-college/Todo/todo.html
+
+gallery page 
+https://darkangel1470.github.io/Jai-hind-college/gallery/gallery.html
+
+blog page 
+https://darkangel1470.github.io/Jai-hind-college/blog/blog.html
+
+more page
+https://darkangel1470.github.io/Jai-hind-college/more/more.html

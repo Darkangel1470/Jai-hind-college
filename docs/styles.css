@@ -128,10 +128,17 @@ a {
 }
 
 .navlistul li {
-    border:2px solid blue;
+    border:2px solid var(--lightpurp);
     margin: 0px auto;
     padding:10px;
+ }
 
+ .navlistul li:hover {
+     background-color: var(--header);
+     color:White;
+ }
+ .navlistul li:hover a {
+     color:White;
  }
 
 
