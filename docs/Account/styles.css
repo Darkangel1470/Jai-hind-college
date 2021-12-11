@@ -98,6 +98,7 @@ body {
     width: 150px;
     padding:0px;
 }
+
 a {
     text-decoration: none;
     color:black;
@@ -180,7 +181,6 @@ form button {
     border-radius: 5px;
     color: white;
     font-size:25px;
-}
 }
 
 /*Css for footer*/

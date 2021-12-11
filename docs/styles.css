@@ -191,7 +191,7 @@ a {
 }
 
 .subjectsdiv:hover {
-    background-color: rgb(0, 255, 221);
+    background-color: var(--lightpurp);
 }
 
 .syllabus {

@@ -57,7 +57,7 @@ additembtn.click(()=>{
 
     if(additeminput.val().length>0){
 
-        tasklist.append('<div class="tasklist"><div class="listitem"><input type="checkbox"><p>'+additeminput.val()+'</p></div></div>').on('click', function() {
+        tasklist.append('<div class="tasklist"><div class="listitem"><input type="checkbox"><p>'+additeminput.val()+'</p></div></div>').find('input').on('click', function() {
             $(this).parent('div').remove();
           });
         additeminput.val('');
