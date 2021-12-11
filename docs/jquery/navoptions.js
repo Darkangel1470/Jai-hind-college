@@ -14,5 +14,3 @@ navlist.hide();
             optionimg.fadeIn(100)
     })
 });
-
-alert("Connected jquery")
