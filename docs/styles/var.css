@@ -1,0 +1,16 @@
+:root {
+    --dark:#018786;
+    --light:#03dac6;
+    --background: #cbc0ff;
+    --lightpurp: #ab92f1;
+    --grey: #909092;
+
+    --header: #7158e6;
+    --right: var(--grey);
+    --bottom: var(--grey);
+    --skillbg: white;
+    --generalbg: white;
+    --subdiv: #7158e6;
+    --subdivborder: grey;
+    --gradient: linear-gradient(-45deg, var(--header),var(--lightpurp))
+}
