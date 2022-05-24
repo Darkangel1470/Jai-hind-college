@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jai-hind-college/static/css/main.bedf4829.css",
+    "main.js": "/jai-hind-college/static/js/main.45e51786.js",
+    "index.html": "/jai-hind-college/index.html",
+    "main.bedf4829.css.map": "/jai-hind-college/static/css/main.bedf4829.css.map",
+    "main.45e51786.js.map": "/jai-hind-college/static/js/main.45e51786.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bedf4829.css",
+    "static/js/main.45e51786.js"
+  ]
+}
