@@ -1,0 +1,10 @@
+
+.subjectdiv {
+    border: 0px solid var(--subdivborder);
+    border-bottom: 5px solid var(--bottom);
+    border-right: 5px solid var(--right);
+    background-color: var(--subdiv);
+    color: white;
+    border-radius: 5px;
+    height: 170px;
+}

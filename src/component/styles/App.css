@@ -1,0 +1,21 @@
+#root {
+    background-color: #cbc0ff;
+    min-height: calc(150vh);
+}
+
+:root {
+    --dark: #018786;
+    --light: #03dac6;
+    --background: #cbc0ff;
+    --lightpurp: #ab92f1;
+    --grey: rgb(198, 198, 198);
+    --header: #7158e6;
+    --right: var(--grey);
+    --bottom: var(--grey);
+    --skillbg: white;
+    --generalbg: white;
+    --subdiv: #7158e6;
+    --subdivborder: var(--grey);
+    --gradient: linear-gradient(-45deg, var(--header),var(--lightpurp));
+}
+
